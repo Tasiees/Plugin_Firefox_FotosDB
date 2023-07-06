@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    align-items: center;
+}
+
+.Titol {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.Image {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+.button {
+    background-color: #555555;
+    border-radius: 8px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.button_download {
+    background-color: #55ac59;
+    border-radius: 8px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#download_pics {
+    display: none;
+}
+
+#loadingMessage {
+    display: none;
+}

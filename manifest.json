@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "FotosBD",
+  "version": "1.0",
+  "description": "Obtenir fotos de la BD segons el dispositiu que miris al APEX ja sigui cable com canalització entre altres. DEV by : Tasiees",
+  "icons": {
+    "48": "icons/icono_blanc.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "cookies",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "notifications",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [],
+      "js": [
+        "background.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icons/icono_blanc.png",
+    "browser_style": true,
+    "default_popup": "/popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{c8f763eb-e254-47de-8652-2ba035e2d041}"
+    }
+  },
+  "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com; object-src 'self'",
+  "web_accessible_resources": [
+    "socket_io.js",
+    "popup.html"
+  ]
+}

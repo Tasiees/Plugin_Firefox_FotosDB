@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="popup.css">
+	<title>Document</title>
+</head>
+
+
+<body>
+	<!-- Titol del Plugin -->
+	<label class="Titol">
+		<h1>FotoDB</h1>
+	</label>
+
+	<!--Logo de insdo-->
+	<label class="Image"><img src="icons/insdo_icono.png"></label>
+
+
+	<!-- Boto per obtenir la informació -->
+	<button class="button" id="take-url">
+		<label>OBTENIR INFORMACIO</label>
+	</button>
+
+	<!-- Aqui es generara desde el javascript totes les fotos i els seus noms corresponents envers al dispositiu seleccionat -->
+	<img id="imgElement" class="imgElement" alt="">
+
+	<!-- Loading Message gif de cargando -->
+	<div id="loadingMessage">
+		<img src="icons/loading.gif">
+	</div>
+
+	<!-- Boto per a descarregar les fotos -->
+	<button class="button_download" id="download_pics">
+		<label>DESCARREGAR FOTOS</label>
+	</button>
+
+	<!-- Mostrem el nom tant de la taula com del idapex -->
+	<p></p>
+
+</body>
+
+<!-- Cridem el script "background.js" -->
+<script src="background.js"></script>
+
+</html>
